@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_images"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="20" >
+
+    <ImageView
+        android:id="@+id/image_tshirt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:scaleX="4.5"
+        android:scaleY="4.5"
+        android:src="@drawable/tshirt_homme_devant" />
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:scaleX="1.8"
+        android:scaleY="1.8" />
+
+    <ImageView
+        android:id="@+id/image_texte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:scaleX="1.8"
+        android:scaleY="1.8" />
+
+</FrameLayout>

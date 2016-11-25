@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">T-Shirt</string>
+    <string name="titre_shirt">Cr\u00E9ation d\'un T-Shirt</string>
+    <string name="titre_sexe">Choisiez votre T-Shirt</string>
+    <string name="radio_homme">Homme</string>
+    <string name="radio_femme">Femme</string>
+
+    <string name="titre_color">Choisiez votre couleur</string>
+    <string name="radio_white">Blanc</string>
+    <string name="radio_red">Rouge</string>
+    <string name="radio_blue">Bleu</string>
+    <string name="radio_yellow">Jaune</string>
+
+    <string name="titre_taille">Choisiez votre taille</string>
+    <string name="radio_small">Petit</string>
+    <string name="radio_medium">Medium</string>
+    <string name="radio_large">Large</string>
+    <string name="radio_xlarge">XLarge</string>
+
+    <string name="titre_front">Vous pouvez ajoutez sur le devant</string>
+    <string name="checkbox_logo">Logo Android</string>
+    <string name="checkbox_text">Texte Android</string>
+
+    <string name="texte_view">Vue Devant</string>
+    <string name="texte_view_back">Vue Arri\u00E8re</string>
+    <string name="botton_save">Sauver</string>
+    <string name="botton_restore">Restorer</string>
+    <string name="botton_cancel">Annuler</string>
+
+    <string name="erreur">Erreur</string>
+    <string name="restore">Restore</string>
+    <string name="sauver">Sauvergarder</string>
+    <string name="file">filename</string>
+</resources>

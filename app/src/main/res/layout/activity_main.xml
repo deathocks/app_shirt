@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.montmo.app_shirt.MainActivity">
+
+    <TextView
+        android:id="@+id/id_titre_shirt"
+        style="@style/base_texte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/titre_shirt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/id_titre_sexe"
+            style="@style/base_texte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="@string/titre_sexe" />
+
+        <RadioGroup
+            android:id="@+id/sexe_shirt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/sexe_masculin"
+                style="@style/resultat_texte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_homme" />
+
+            <RadioButton
+                android:id="@+id/sexe_feminin"
+                style="@style/resultat_texte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_femme" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/id_titre_color"
+            style="@style/base_texte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="@string/titre_color" />
+
+        <RadioGroup
+            android:id="@+id/color_shirt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/color_white"
+                style="@style/resultat_texte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_white" />
+
+            <RadioButton
+                android:id="@+id/color_red"
+                style="@style/resultat_texte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_red" />
+
+            <RadioButton
+                android:id="@+id/color_blue"
+                style="@style/resultat_texte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_blue" />
+
+            <RadioButton
+                android:id="@+id/color_yellow"
+                style="@style/resultat_texte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_yellow" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/id_titre_taille"
+            style="@style/base_texte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="@string/titre_taille" />
+
+        <RadioGroup
+            android:id="@+id/taille_shirt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/taille_small"
+                style="@style/resultat_texte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_small" />
+
+            <RadioButton
+                android:id="@+id/taille_medium"
+                style="@style/resultat_texte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_medium" />
+
+            <RadioButton
+                android:id="@+id/taille_large"
+                style="@style/resultat_texte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_large" />
+
+            <RadioButton
+                android:id="@+id/taille_xlarge"
+                style="@style/resultat_texte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_xlarge" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/id_titre_front"
+            style="@style/base_texte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="@string/titre_front" />
+
+        <CheckBox
+            android:id="@+id/case_logo"
+            style="@style/resultat_texte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkbox_logo" />
+
+        <CheckBox
+            android:id="@+id/case_text"
+            style="@style/resultat_texte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkbox_text" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/img"
+        layout="@layout/layout_images_tshirt"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center" />
+
+    <Switch
+        android:id="@+id/switch_shirt"
+        style="@style/resultat_texte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/texte_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button_save"
+            style="@style/resultat_texte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/icone_sauvegarder"
+            android:text="@string/botton_save"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/button_restore"
+            style="@style/resultat_texte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/icone_restaurer"
+            android:text="@string/botton_restore"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/button_cancel"
+            style="@style/resultat_texte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/icone_annuler"
+            android:text="@string/botton_cancel"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
